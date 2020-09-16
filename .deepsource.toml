@@ -1,0 +1,19 @@
+version = 1
+
+test_patterns = ["test/**"]
+
+exclude_patterns = [
+    ".dependabot/**",
+    ".github/**",
+    "docs/**",
+    "tools/**"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  module_system = "commonjs"
+  environment = ["nodejs"]
+  dialect = "typescript"
